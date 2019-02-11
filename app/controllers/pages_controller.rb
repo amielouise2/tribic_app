@@ -28,13 +28,5 @@ class PagesController < ApplicationController
     @page_description = 'Are you a small business looking to streamline your business processe.'
     @page_keywords    = 'tribic, halifax, professional, services, software, solution, saas, cloud, small, business, agile'
   end
-end
-
-
-
-
-
-
-
 
 end

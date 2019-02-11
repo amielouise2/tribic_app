@@ -31,10 +31,10 @@
             <%= link_to "<i class='fa fa-eye-slash fa-lg publish'></i>".html_safe, publish_article_path(article),  data: { remote: true, confirm: 'Are you sure you want to publish?'} %> &nbsp;
             <% end %>
             <% if article.published? %>
-              <%= link_to "<i class='fa fa-globe fa-sm archive'></i>".html_safe, archive_article_path(article), data: { remote: true, confirm: 'Are you sure you want to archive?' } %>
+              <%= link_to "<i class='fa fa-globe fa-lg archive'></i>".html_safe, archive_article_path(article), data: { remote: true, confirm: 'Are you sure you want to archive?' } %>
             <% end %>
             <% if article.archived? %>
-              <%= link_to "<i class='fa fa-lock fa-sm revive'></i>".html_safe, revive_article_path(article), data: { remote: true, confirm: 'Are you sure you want to revive?'} %> &nbsp;
+              <%= link_to "<i class='fa fa-lock fa-lg revive'></i>".html_safe, revive_article_path(article), data: { remote: true, confirm: 'Are you sure you want to revive?'} %> &nbsp;
             <% end %>
           </td>
           <td colspan="5"><%= link_to 'Show', article %> | 

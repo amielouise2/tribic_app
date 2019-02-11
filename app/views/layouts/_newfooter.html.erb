@@ -27,8 +27,6 @@
             <span class="align-bottom">
             <% if model_signed_in? %>
               <%= link_to "<i class='fas fa-sign-out-alt'></i> Admin Logout".html_safe, destroy_model_session_path, method: :delete %>
-            <% else %>
-            <%= link_to "<i class='fas fa-sign-in-alt'></i> Admin Login".html_safe, new_model_session_path %>
             <% end %>
             </span>
           </div> 

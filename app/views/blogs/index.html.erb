@@ -6,38 +6,79 @@
         <div class="row">
             <div class="box">
                 <div class="col-lg-12">
-                <%= image_tag("slide-4.jpg", class: "img-responsive img-full", alt:"reading newspaper image for blog")  %>
-                    <hr class="tagline-divider">
-                    <h2 class="intro-text text-center">Company
-                        <strong>blog</strong>
-                    </h2>
-                    <hr class="tagline-divider">
+                    <%= image_tag("slide-4.jpg", class: "img-responsive img-full", alt:"reading newspaper image for blog")  %>
+                        <hr class="tagline-divider">
+                        <h2 class="intro-text text-center">Company
+                            <strong>blog</strong>
+                        </h2>
+                        <hr class="tagline-divider">
                 </div>
-                  <% @articles.each do |article| %>
+                <% @articles.each do |article| %>
         
-                <div class="row">
-                    <div class="col-lg-3"></div>
-                    <div class="col-lg-6 text-center">
-                        <h2><%= article.title %>
-                        <br />
-                        <small><%= article.published_on.strftime("%B %d, %Y") %></small>
-                    </h2>
-                      
+                    <div class="row">
+                        <div class="col-lg-3"></div>
+                        <div class="col-lg-6 text-center">
+                            <h2><%= article.title %>
+                            <br />
+                            <small><%= article.published_on.strftime("%B %d, %Y") %></small>
+                            </h2>
+                            
+                        </div>
+                        <div class="col-lg-3"></div>
                     </div>
-                    <div class="col-lg-3"></div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-3"></div>
-                    <div class="col-lg-6 text-left">
-                        
-                        <%= raw sanitize article.body.truncate(120) %>
-                        <%= link_to "Read More", blog_path(article.id), class:"btn btn-default, btn-lg" %>
-                        <hr>
+                    <div class="row">
+                        <div class="col-lg-3"></div>
+                        <div class="col-lg-6 text-left">
+                            
+                            <%= raw sanitize article.body.truncate(120) %>
+                            <%= link_to "Read More", blog_path(article), class:"btn btn-default, btn-lg" %>
+                            <hr>
+                        </div>
+                        <div class="col-lg-3"></div>
                     </div>
-                    <div class="col-lg-3"></div>
-                </div>
                 
-              <% end %>
+                <% end %>
+            </div>
         </div>
+        <% if model_signed_in? %>
+            <div class="row">
+                <div class="box">
+                    <div class="col-lg-12">
+                        <%= image_tag("slide-4.jpg", class: "img-responsive img-full", alt:"reading newspaper image for blog")  %>
+                        <hr class="tagline-divider">
+                        <h2 class="intro-text text-center">Admin Preview
+                        <strong></strong>
+                        </h2>
+                        <hr class="tagline-divider">
+                    </div>
+                    <% @draft_articles.each do |article| %>
+        
+                        <div class="row">
+                            <div class="col-lg-3"></div>
+                            <div class="col-lg-6 text-center">
+                                <h2><%= article.title %>
+                                <br />
+                                <small><%= article.published_on.strftime("%B %d, %Y") %></small>
+                            </h2>
+                            
+                            </div>
+                            <div class="col-lg-3"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3"></div>
+                            <div class="col-lg-6 text-left">
+                                
+                                <%= raw sanitize article.body.truncate(120) %>
+                                <%= link_to "Read More", blog_path(article), class:"btn btn-default, btn-lg" %>
+                                <hr>
+                            </div>
+                            <div class="col-lg-3"></div>
+                        </div>
+                        
+                    <% end %>
+                </div>
+            </div>
+        <% end %>
+
     </div>
     <!-- /.container -->

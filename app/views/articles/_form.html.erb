@@ -21,11 +21,13 @@
     <%= form.label :tags %>
     <%= form.input_field :tags, as: :string, required: false %>
     <%= form.label :body %>
-    <%= form.input_field :body, id: :article_body %>
+    <%= form.hidden_field :body, id: :article_body %>
     <trix-editor input="article_body"></trix-editor>
     
     <%= form.label :image %>
     <%= form.input_field :image, as: :file %>
+    <%= form.label :slug %>
+    <%= form.input_field :slug %>
   </div>
   
 

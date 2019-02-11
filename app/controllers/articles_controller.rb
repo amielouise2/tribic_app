@@ -92,7 +92,7 @@ class ArticlesController < ApplicationController
     
     respond_to do |format|
       if @article.draft!
-        format.html { redirect_to articless_url, notice: 'Article was successfully revived.' }
+        format.html { redirect_to articles_url, notice: 'Article was successfully revived.' }
         format.json { head :no_content }
       else
         format.html { render :edit }
