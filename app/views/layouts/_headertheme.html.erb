@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-lg navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand">
+      <%= link_to image_tag('tribic-plain.png', height: '60', width: '60') + "TriBic software", root_path, id: 'logo' %>
+    </a>
+
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav text-uppercase ml-auto">
+        <li class="nav-item"><%= link_to "Home",    root_path, class: 'nav-link js-scroll-trigger' %></li>
+        <li class="nav-item"><%= link_to "Services",    services_path, class: 'nav-link js-scroll-trigger' %></li>
+        <li class="nav-item"><%= link_to "About",    about_path, class: 'nav-link js-scroll-trigger' %></li>
+        <li class="nav-item"><%= link_to "Careers",    careers_path, class: 'nav-link js-scroll-trigger' %></li>
+        <li class="nav-item"><%= link_to "Get in Touch", contacts_path, class: "nav-link js-scroll-triggerbtn-custom btn-lg btn-sucess" %></li>
+          </ul>
+        </li>
+      </ul>
+        </div>
+  </div><!-- /.container-fluid -->
+</nav>

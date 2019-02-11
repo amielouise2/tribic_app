@@ -1,0 +1,36 @@
+
+<footer>
+    <div class="container">
+      <div class="row">
+          <div class="col-md-4 text-left">
+            <span class="align-bottom">
+            <%= image_tag('lightbulbgreen.png', size: "70x60", class: "img-fluid" ) %> 2018 &copy;TriBic software
+            </span>
+          </div>
+          <div class="col-md-4 text-center">
+            <span class="align-top">
+              <%= link_to facebook_path, class: :p do %>
+                <i class="fab fa-facebook fa-2x" aria-hidden="true"></i>
+                <% end %>&nbsp;&nbsp;
+              <%= link_to twitter_path, class: :p do %>
+                <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
+              <% end %>&nbsp;&nbsp;
+              <%= link_to linkedin_path, class: :p do %>
+                <i class="fab fa-linkedin-in fa-2x" aria-hidden="true"></i>
+              <% end %>&nbsp;&nbsp;
+              <%# = link_to google_path, class: :p do %>
+                <!--<i class="fab fa-google-plus-g fa-2x" aria-hidden="true"></i>-->
+              <%# end %>
+            </span>
+            </div>
+          <div class="col-md-4 text-right">
+            <span class="align-bottom">
+            <% if model_signed_in? %>
+              <%= link_to "<i class='fas fa-sign-out-alt'></i> Admin Logout".html_safe, destroy_model_session_path, method: :delete %>
+            <% else %>
+            <%= link_to "<i class='fas fa-sign-in-alt'></i> Admin Login".html_safe, new_model_session_path %>
+            <% end %>
+            </span>
+          </div> 
+    </div>
+</footer>

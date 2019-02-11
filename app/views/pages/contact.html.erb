@@ -1,0 +1,41 @@
+<% provide(:title, "Contact Us") %>
+
+  <div class="container">
+    <div class="row">
+      <div class="box">
+        <div class="col-lg-12">
+            <%= image_tag("contact.jpg", class: "img-responsive img-full") %>
+            <hr class="tagline-divider">
+            <h2 class="intro-text text-center">Let's
+                    <strong>Talk</strong>
+            </h2>
+            <hr class="tagline-divider">
+            <br/>
+            
+            <p>When you choose TriBic, you become a part of our team. Having you as our collaborator not only allows us to create the best and most accurate product but also lets you give us bi-weekly feedback ensuring the product will meet your needs.</p>
+            
+            <p>
+            We offer a No-Obligation initial consultation to determine which of our 3-tiers is best for your business and fits your price range.
+            </p>
+            </div>
+            <hr>
+            <br />
+              <div class="text-center">
+              <hr><br>
+                <%= mail_to("sales@tribicsoftware.com", class: :p) do %>
+                  <i class="fas fa-envelope fa-2x" aria-hidden="true"> <br>sales@tribicsoftware.com</i>
+                <% end %>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <div class="clearfix"></div>
+</div>
+
+
+
+
+
+
+  

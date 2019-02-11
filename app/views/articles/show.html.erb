@@ -1,0 +1,45 @@
+<div class="container">
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @article.title %>
+</p>
+
+<p>
+  <strong>Published:</strong>
+  <%= @article.published_on %>
+</p>
+
+<p>
+  <strong>Tags:</strong>
+  <%= @article.tags %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= sanitize @article.body %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <% if @article.image.attached? %>
+
+     <%= image_tag url_for(@article.image.variant(resize: "50x50")) %>
+  <% end %>
+</p>
+
+
+<p>
+  <strong>Author:</strong>
+  <%= @article.author %>
+</p>
+
+<%= link_to 'Edit', edit_article_path(@article) %> |
+<%= link_to 'Back', articles_path %>
+</div></div></div></div>

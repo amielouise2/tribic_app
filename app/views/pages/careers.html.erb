@@ -1,0 +1,72 @@
+<% provide(:title, "Careers") %>
+
+  <div class="container">
+    <div class="row">
+      <div class="box">
+        <div class="col-lg-12">
+            <%= image_tag("rockteam.jpg", class: "img-responsive img-full")  %>
+            <hr class="tagline-divider">
+              <h2 class="intro-text text-center">We're building
+                    <strong>a team</strong>
+              </h2>
+            <hr class="tagline-divider">
+            <br/>
+          
+            <p>Although we do not have any specific job postings created, we are seeking to ramp up for a new development project and are looking for individuals (new grads and intermediate level) with skills in one or more of the following areas listed below.</p>
+          
+            <p>If you are interested in an agile start-up environment with a culture of respectfulness, inclusiveness, and creativity, send us your resume and cover letter.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <hr class="tagline-divider">
+                <h2 class="intro-text text-center">Looking
+                    <strong>For</strong>
+                </h2>
+              <hr class="tagline-divider">
+              <br/>
+            </div> 
+          </div>
+          <div class="row">
+            <div class="col-sm-3 text-center">&nbsp; </div>
+            <div class="col-sm-3 text-left">
+              <p><ul>
+                  <li>iOS and Android</li>
+                  <li>Data Visualization</li>
+                  <li>Agile Process</li>
+                  <li>Web Design</li>
+              </ul></p>
+            </div>
+            <div class="col-sm-3 text-left">
+              <p><ul>
+                <li>Heroku and GCP</li>
+                <li>Docker and Kubernetes</li>
+                <li>Ruby on Rails</li>
+                <li>Node.js</li>
+              </ul></p>
+            </div>
+            <div class="col-sm-3 text-center">&nbsp; </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 text-center">
+            <br /> <br />
+                <%= mail_to("jobs@tribicsoftware.com", class: :p) do %>
+                  <i class="fas fa-envelope fa-2x" aria-hidden="true"> <br>jobs@tribicsoftware.com</i>
+                <% end %>
+                 <br /> <br />
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+    
+</div>
+
+
+
+
+
+
+  
+

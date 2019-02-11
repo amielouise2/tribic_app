@@ -1,0 +1,585 @@
+
+
+@mixin box_sizing {
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
+}
+
+/* added by me */
+$fudgeit-green: #74d562;
+$primary-bg: #a8d5a1;
+$secondary-font: #63365b;
+$fudgeit-purple: #9a2585;
+$url-before: #65a05a;
+$url-hover: #63365b;
+
+/* UNIVERSAL */
+
+body {
+  padding-top: 60px;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+}
+
+/* TYPOGRAPHY */
+
+
+#heading1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+ font-weight: 200;
+ font-stretch: expanded;
+ color: #74d562;
+}
+
+#heading2 {
+  font-size: 2.0em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-weight: 300;
+  font-stretch: expanded;
+  color: #000;
+}
+
+#heading3 {
+  font-size: 1.9em;
+  text-align: center;
+  margin-bottom: 10px;
+  letter-spacing: 5px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 200;
+  font-stretch: expanded;
+  color: $fudgeit-green;
+ }
+
+.container a {
+  color: $url-before;
+}
+
+.container a:hover {
+  background-color: #fff;
+  color:
+  $url-hover!important;
+}
+p {
+  font-size: 1.3em;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+}
+ol, li {
+  font-size: 1.1em;
+  color: #000;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  font-stretch: expanded;
+}
+
+/* HEADER */
+
+/*#logo {
+  float: left;
+  margin-right: 20px;
+  font-size: 1.5em;
+  letter-spacing: .2rem;
+  color: #000;
+  padding-top: 5px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  font-stretch: extra-expanded;
+
+}*/
+
+
+
+
+/* CUSTOM CLASSES BY ME */
+.btn-custom {
+  @extend .btn;
+  color: #fff;
+  background-color: $fudgeit-green;
+  border: none;
+  border-radius: 0px;
+  font-size: 1.5em;
+  //font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  font-stretch: expanded;
+}
+.btn-custom:after {
+  color: #fff;
+  background-color: $fudgeit-purple!important;
+}
+
+.btn-signup {
+  @extend .btn;
+  color: #fff!important;
+  background-color: $fudgeit-green;
+  border: none;
+  border-radius: 0px;
+  font-size: 1.5em;
+  font-weight: 400;
+  font-stretch: expanded;
+}
+
+.btn-signup:hover{
+  color: $fudgeit-purple!important;
+}
+
+.btn-form{
+  @extend .btn;
+  background-color: #000;
+  border: none;
+  border-radius: 0px;
+  font-size: .5em;
+  color: #fff;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  font-stretch: expanded;
+}
+
+.img-circular {
+ width: 300px;
+ height: 300px;
+ background-size: cover;
+ display: block;
+ border-radius: 200px;
+ -webkit-border-radius: 200px;
+ -moz-border-radius: 200px;
+}
+
+.img-circular {
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  display: block;
+  border-radius: 350px;
+  -webkit-border-radius: 350px;
+  -moz-border-radius: 350px;
+ }
+
+ .img-square {
+   width: 550px;
+   height: 250px;
+   background-size: cover;
+   display: block;
+   
+  }
+
+#bio-heading{
+  padding: 0px;
+  font-size: 1.4em;
+  text-align: left;
+  margin-bottom: 20px;
+  letter-spacing: 5px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  font-stretch: expanded;
+  color: $fudgeit-purple;
+}
+/* footer */
+.copyright {
+  text-align: center;
+  font-size: 1.0em;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 100;
+  font-stretch: extra-expanded;
+  letter-spacing: .3rem;
+  margin-top: 45px;
+  padding-top: 2px;
+  border-top: 1px;
+
+}
+
+footer {
+  padding: 10px;
+  border-top: 0px;
+  text-align: center;
+
+}
+
+footer a {
+  color: $fudgeit-green;
+}
+
+footer a:hover {
+  color: $fudgeit-purple;
+  background-color: #fff;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 15px;
+}
+/* forms */
+
+input, textarea, select {
+  border: 1px solid #bbb;
+  width: 100%;
+  margin-bottom: 15px;
+  @include box_sizing;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  font-stretch: extra-expanded;
+}
+
+input {
+  height: auto !important;
+}
+
+.contactform-textarea {
+  color: black
+}
+.hidden { display: none; }
+.alert-error {
+color: white;
+text-align: left;
+font-size: .8em;
+}
+
+.alert-alert {
+color: #b94a48;
+text-align: left;
+font-size: .8em;
+}
+
+.alert-success {
+color: white;
+text-align: center;
+font-size: .8em;
+}
+
+.alert-notice {
+color: white;
+text-align: left;
+font-size: .8em;
+}
+
+/* added from startup theme */
+
+body {
+  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  //background: url(bg.jpg)no-repeat center center fixed;
+  background: url(bldg.jpg)no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+p {
+  font-size: 1.25em;
+  line-height: 1.6;
+  color: #000;
+}
+
+hr {
+  max-width: 400px;
+  border-color: #999999;
+}
+
+.brand,
+.address-bar {
+  display: none;
+}
+
+.navbar-brand {
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 2px;
+  padding: 2px;
+}
+
+
+.navbar-nav {
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+.img-full {
+  min-width: 100%;
+}
+
+.brand-before,
+.brand-name {
+  text-transform: capitalize;
+}
+
+.brand-before {
+  margin: 15px 0;
+}
+
+.brand-name {
+  margin: 0;
+  font-size: 4em;
+}
+
+.tagline-divider {
+  margin: 15px auto 3px;
+  max-width: 250px;
+ // border-color: #999999;
+ border-color: $fudgeit-green;
+}
+
+.box {
+  margin-bottom: 20px;
+  padding: 30px 15px;
+  background: #fff;
+  background: rgba(255,255,255,0.9);
+}
+
+.intro-text {
+  text-transform: uppercase;
+  font-size: 1.25em;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.instruction-text {
+  align-content: center;
+  text-transform: none;
+  font-size: 1.0em;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.img-border {
+  float: none;
+  margin: 0 auto 0;
+  border: #999999 solid 1px;
+}
+
+.img-left {
+  float: none;
+  margin: 0 auto 0;
+}
+
+footer {
+  background: #fff;
+  background: rgba(255,255,255,0.9);
+}
+
+footer p {
+  margin: 0;
+  padding: 50px 0;
+}
+
+/*
+ * TABLES
+ */
+ .table thead {
+  background-color: rgba($primary-bg,0.4);
+  border-radius: 4px;
+}
+
+.table thead th {
+  vertical-align: middle;
+  border: 0 none;
+  padding: 20px 12px 20px 12px;
+  color: $secondary-font;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.table td {
+  border-top: 0;
+  padding: 0.85rem;
+  vertical-align: middle;
+  //font-weight: 500;
+  font-weight: 400;
+}
+
+.table-hover tbody tr:hover {
+  background: $secondary-font;
+}
+
+.table-bordered th, .table-bordered td {
+  border: 0.07rem solid #eee;
+}
+
+.table .td-actions a i {
+  background: transparent;
+  color: $primary-bg;
+  font-size: 1.6rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: all 0.4s ease;
+}
+
+.table .td-actions a i.edit:hover,
+.table .td-actions a i.more:hover {
+  background: $primary-bg;
+  color: #fff;
+}
+
+.table .td-actions a i.delete:hover {
+  background: $primary-bg;
+  color: #fff;
+}
+
+.table > thead > tr > td.danger, .table > tbody > tr > td.danger, .table > tfoot > tr > td.danger, .table > thead > tr > th.danger, .table > tbody > tr > th.danger, .table > tfoot > tr > th.danger, .table > thead > tr.danger > td, .table > tbody > tr.danger > td, .table > tfoot > tr.danger > td, .table > thead > tr.danger > th, .table > tbody > tr.danger > th, .table > tfoot > tr.danger > th {
+  background-color: rgba(52, 40, 104, 0.02);
+  color: $primary-bg;
+}
+
+@media screen and (min-width:768px) {
+  .brand {
+      display: inherit;
+      margin: 0;
+      padding: 30px 0 10px;
+      text-align: center;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+      font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-size: 5em;
+      font-weight: 700;
+      line-height: normal;
+      color: #fff;
+  }
+
+  .top-divider {
+      margin-top: 0;
+  }
+
+  .img-left {
+      float: left;
+      margin-right: 25px;
+  }
+
+  .address-bar {
+      display: inherit;
+      margin: 0;
+      padding: 0 0 40px;
+      text-align: center;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+      text-transform: uppercase;
+      font-size: 1.25em;
+      font-weight: 400;
+      letter-spacing: 3px;
+      color: #fff;
+  }
+  
+
+  #logo{
+    float: left;
+    margin-right: 20px;
+    text-transform: uppercase;
+    color: #000;
+    padding-top: 5px;
+        font-weight: 400;
+        letter-spacing: 3px;
+        float: left;
+        font-size: 1.25em;
+  }
+  
+  #logo:hover {
+    color: $fudgeit-green;
+    text-decoration: none;
+    background-color: #fff!important;
+  }
+  
+  .navbar-nav {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px;
+  }
+
+  .navbar-nav:after{
+    color: $fudgeit-green;
+  }
+  
+  .navbar {
+      border-radius: 0;
+  }
+
+  .navbar-header {
+      display: none;
+  }
+
+  .navbar {
+      min-height: 0;
+  }
+  
+  .navbar-default {
+      border: none;
+      background: #fff;
+      background: rgba(255,255,255,0.9);
+  }
+
+  .nav>li>a {
+      padding: 35px;
+  }
+
+  .navbar-nav>li>a {
+      line-height: normal;
+  }
+
+  .navbar-nav {
+      text-transform: uppercase;
+      font-weight: 400;
+      letter-spacing: 3px;
+      display: table;
+      float: none;
+      margin: 0 auto;
+      table-layout: fixed;
+      font-size: 1.25em;
+  }
+
+  .navbar-nav:after {
+    color: $fudgeit-green;
+    background-color: #fff!important;
+  }
+  .navbar-brand {
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+    padding-bottom: 22px;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .box:after {
+      content: '';
+      display: table;
+      clear: both;
+  }
+}

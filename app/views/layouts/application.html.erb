@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%= render '/layouts/google' %>
+   <meta charset="utf-8">
+    <title><%= full_title(yield(:title)) %></title>
+    <%= display_meta_tags description: 'Software solutions for small businesses.' %>
+    <% display_meta_tags keywords: 'software, solution, saas, cloud, small, business' %>
+    
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+<!-- navbar stuff-->
+<%= javascript_include_tag "https://code.jquery.com/jquery-3.3.1.slim.min.js" %>
+<script src="//code.jquery.com/jquery.min.js"></script>
+   <!-- google fonts -->
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Roboto+Slab:100,300,400" rel="stylesheet">
+       <!-- font awesome for social buttons -->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+      <!-- responsive meta tag from bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <%= render 'layouts/shim' %>
+  
+
+  </head>
+
+  <body>
+
+<br><br>
+    <%= render 'layouts/header' %>
+
+
+    
+      <%= yield %>
+      <%= render 'layouts/newfooter' %>
+   
+  
+  </body>
+</html>

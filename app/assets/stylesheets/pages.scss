@@ -1,0 +1,19 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+/* CUSTOM CLASSES BY ME */
+@import "bootstrap";
+/* added by me */
+$fudgeit-green: #74d562;
+$fudgeit-purple: #9a2585;
+
+.btn-custom {
+    @extend .btn;
+    color: #fff !important;
+    background-color: $fudgeit-green;
+    border: none;
+    border-radius: 0px;
+    font-size: 2.5em;
+    font-weight: 400;
+    font-stretch: expanded;
+  }
