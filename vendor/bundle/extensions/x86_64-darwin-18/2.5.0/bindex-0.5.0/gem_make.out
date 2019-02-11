@@ -1,5 +1,5 @@
 current directory: /Users/amiewalton/Sites/tribic_app/vendor/bundle/gems/bindex-0.5.0/ext/bindex
-/Users/amiewalton/.rvm/rubies/ruby-2.5.3/bin/ruby -r ./siteconf20190210-26239-ijjrvs.rb extconf.rb
+/Users/amiewalton/.rvm/rubies/ruby-2.5.3/bin/ruby -r ./siteconf20190211-76723-11dhox3.rb extconf.rb
 creating Makefile
 
 current directory: /Users/amiewalton/Sites/tribic_app/vendor/bundle/gems/bindex-0.5.0/ext/bindex
@@ -12,4 +12,4 @@ linking shared-object bindex/cruby.bundle
 
 current directory: /Users/amiewalton/Sites/tribic_app/vendor/bundle/gems/bindex-0.5.0/ext/bindex
 make "DESTDIR=" install
-/usr/local/opt/coreutils/bin/ginstall -c -m 0755 cruby.bundle ./.gem.20190210-26239-14112p9/bindex
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 cruby.bundle ./.gem.20190211-76723-wzsh6j/bindex
