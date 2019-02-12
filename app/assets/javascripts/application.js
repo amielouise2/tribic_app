@@ -18,5 +18,6 @@
 //= require bootstrap
 //= require trix
 //= require tribic
+//= require social-share-button
 //= require_tree .
 

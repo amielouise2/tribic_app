@@ -1,5 +1,6 @@
 class BlogsController < ApplicationController
     before_action :set_blog, only: [:show]
+    
     def index
         
         @draft_articles = Article.all.draft

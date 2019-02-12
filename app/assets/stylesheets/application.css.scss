@@ -1,8 +1,10 @@
 //*= require trix
 
-// $navbar-default-bg: #312312
- @import "bootstrap-sprockets";
-@import "bootstrap";
- @import "font-awesome";
 
- @import "custom";
+// $navbar-default-bg: #312312
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome";
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,700|Roboto+Slab:100,300,400");
+@import "social-share-button";
+@import "custom";

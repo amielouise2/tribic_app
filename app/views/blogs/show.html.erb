@@ -17,16 +17,17 @@
                 <div class="row">
                     <div class="col-md-3"></div>
                     <div class="col-md-6">
-                    <%= sanitize @article.body %>
-<div class="col-md-3"></div> 
-</div>
-
-                    
-                    
+                       <p> <%= sanitize @article.body %></p>
+                    </div>
+                    <div class="col-md-3"></div>    
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                       <p> <%= social_share_button_tag(@article.title) %></p>
                     </div>
                 </div>
-             </div>
-         </div>  
+            </div>
+        </div>  
     </div>
               
 

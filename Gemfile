@@ -29,7 +29,7 @@ gem 'simple_form', '~> 4.1'
 gem 'mini_magick', '~> 4.8'
 gem "google-cloud-storage", "~> 1.8", require: false
 gem 'trix'
-
+gem 'social-share-button', '~> 1.2'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes

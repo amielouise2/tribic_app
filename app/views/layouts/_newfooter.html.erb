@@ -4,7 +4,7 @@
       <div class="row">
           <div class="col-md-4 text-left">
             <span class="align-bottom">
-            <%= image_tag('lightbulbgreen.png', size: "70x60", class: "img-fluid" ) %> 2018 &copy;TriBic software
+            <%= image_tag('lightbulbgreen.png', size: "70x60", class: "img-fluid", alt:"tribic logo - lightbulb" ) %> 2018 &copy;TriBic software
             </span>
           </div>
           <div class="col-md-4 text-center">
@@ -18,9 +18,7 @@
               <%= link_to linkedin_path, class: :p do %>
                 <i class="fab fa-linkedin-in fa-2x" aria-hidden="true"></i>
               <% end %>&nbsp;&nbsp;
-              <%# = link_to google_path, class: :p do %>
-                <!--<i class="fab fa-google-plus-g fa-2x" aria-hidden="true"></i>-->
-              <%# end %>
+              
             </span>
             </div>
           <div class="col-md-4 text-right">
@@ -30,5 +28,6 @@
             <% end %>
             </span>
           </div> 
+        </div>
     </div>
 </footer>
