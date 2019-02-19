@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-
+  get '/robots.:format' => 'pages#robots'
   devise_for :models
   root to: 'pages#home'
   get 'home' =>'pages#home'

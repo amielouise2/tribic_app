@@ -1,5 +1,5 @@
 current directory: /Users/amiewalton/Sites/tribic_app/vendor/bundle/gems/websocket-driver-0.7.0/ext/websocket-driver
-/Users/amiewalton/.rvm/rubies/ruby-2.5.3/bin/ruby -r ./siteconf20190211-76723-1bxq0zy.rb extconf.rb
+/Users/amiewalton/.rvm/rubies/ruby-2.5.3/bin/ruby -r ./siteconf20190218-47230-8pydco.rb extconf.rb
 creating Makefile
 
 current directory: /Users/amiewalton/Sites/tribic_app/vendor/bundle/gems/websocket-driver-0.7.0/ext/websocket-driver
@@ -12,4 +12,4 @@ linking shared-object websocket_mask.bundle
 
 current directory: /Users/amiewalton/Sites/tribic_app/vendor/bundle/gems/websocket-driver-0.7.0/ext/websocket-driver
 make "DESTDIR=" install
-/usr/local/opt/coreutils/bin/ginstall -c -m 0755 websocket_mask.bundle ./.gem.20190211-76723-u0eyd
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 websocket_mask.bundle ./.gem.20190218-47230-gb3nyw

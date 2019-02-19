@@ -1,0 +1,9 @@
+<% if Rails.env.production? %>
+  User-Agent: *
+  Allow: /
+  Disallow: /admin/users
+  Sitemap: http://www.tribicsoftware.com/sitemap1.xml
+<% else %>
+  User-Agent: *
+  Disallow: /
+<% end %>

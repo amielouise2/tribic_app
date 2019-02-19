@@ -1,5 +1,5 @@
 current directory: /Users/amiewalton/Sites/tribic_app/vendor/bundle/gems/bootsnap-1.4.0/ext/bootsnap
-/Users/amiewalton/.rvm/rubies/ruby-2.5.3/bin/ruby -r ./siteconf20190211-97429-do5c6q.rb extconf.rb
+/Users/amiewalton/.rvm/rubies/ruby-2.5.3/bin/ruby -r ./siteconf20190218-47230-17i9awz.rb extconf.rb
 creating Makefile
 
 current directory: /Users/amiewalton/Sites/tribic_app/vendor/bundle/gems/bootsnap-1.4.0/ext/bootsnap
@@ -12,4 +12,4 @@ linking shared-object bootsnap/bootsnap.bundle
 
 current directory: /Users/amiewalton/Sites/tribic_app/vendor/bundle/gems/bootsnap-1.4.0/ext/bootsnap
 make "DESTDIR=" install
-/usr/local/opt/coreutils/bin/ginstall -c -m 0755 bootsnap.bundle ./.gem.20190211-97429-13ho7u7/bootsnap
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 bootsnap.bundle ./.gem.20190218-47230-esorzg/bootsnap
